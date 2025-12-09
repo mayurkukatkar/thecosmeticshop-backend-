@@ -5,9 +5,13 @@ const connectDB = require('./config/db');
 
 dotenv.config();
 
-connectDB();
-
 const app = express();
+
+// Middleware to ensure DB connection
+app.use(async (req, res, next) => {
+    await connectDB();
+    next();
+});
 
 app.use(cors());
 app.use(express.json());
