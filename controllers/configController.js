@@ -15,6 +15,10 @@ const getConfig = asyncHandler(async (req, res) => {
             res.json({ key: 'deliveryEmail', value: '' });
             return;
         }
+        if (req.params.key === 'whatsappNumber') {
+            res.json({ key: 'whatsappNumber', value: '+919876543210' });
+            return;
+        }
         res.status(404);
         throw new Error('Config not found');
     }
