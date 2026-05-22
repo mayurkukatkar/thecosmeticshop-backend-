@@ -109,7 +109,7 @@ const importData = async () => {
 
         // Sample Banner
         const sampleBanner = new Banner({
-            image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=1200&h=500',
+            image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=90&w=1920',
             title: 'Royal Ethnic Wear Collection',
             link: '/products',
             isActive: true,
